@@ -21,7 +21,7 @@ jobs:
         GHCH_VERSION: v0.10.2
     - name: Generate New Changelog
       run: |
-        ./bin/ghch -w --next-version=${{ github.event.inputs.nextVersion }}
+        ./ghch/ghch -w --next-version=${{ github.event.inputs.nextVersion }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create Pull Request

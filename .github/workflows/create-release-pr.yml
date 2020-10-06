@@ -1,4 +1,4 @@
-name: Generate Release Pull Request
+name: Create Relaese Pull Request
 
 on:
   workflow_dispatch:
@@ -8,8 +8,8 @@ on:
         required: true
         default: 'vX.Y.Z'
 jobs:
-  create-release-branch:
-    name: Create Release Branch
+  create-release-pull-request:
+    name: Create Release Pull Request
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

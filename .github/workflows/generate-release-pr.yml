@@ -28,6 +28,7 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # TODO should change Personal access token
+        branch-suffix: timestamp
         branch: release-${{ github.event.inputs.nextVersion}}
         commit-message: Prepare for release ${{ github.event.inputs.nextVersion}}
         title: Release ${{ github.event.inputs.nextVersion}}

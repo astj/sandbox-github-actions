@@ -35,4 +35,5 @@ jobs:
           ## How to release this version
           1. Review and modify CHANGELOG.md
           2. Merge this pull request
-          3. Wait a while, and check https://github.com/${{ github.repository}}/releases/tag/${{ github.event.inputs.nextVersion }}
+          3. `git checkout main && git pull && git tag ${{ github.event.inputs.nextVersion }} && git push --tags`
+          4. Wait a while, and check https://github.com/${{ github.repository}}/releases/tag/${{ github.event.inputs.nextVersion }}

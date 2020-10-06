@@ -32,7 +32,7 @@ jobs:
         commit-message: Prepare for release ${{ github.event.inputs.nextVersion}}
         title: Release ${{ github.event.inputs.nextVersion}}
         body: |
-        ## How to release this version
-        1. Review and modify CHANGELOG.md
-        2. Merge this pull request
-        3. Wait a while, and check https://github.com/${{ github.repository}}/releases/tag/${{ github.event.inputs.nextVersion }}
+          ## How to release this version
+          1. Review and modify CHANGELOG.md
+          2. Merge this pull request
+          3. Wait a while, and check https://github.com/${{ github.repository}}/releases/tag/${{ github.event.inputs.nextVersion }}

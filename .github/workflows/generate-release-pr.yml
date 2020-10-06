@@ -16,7 +16,7 @@ jobs:
     - name: install ghch
       run: |
         mkdir -p ./ghch/
-        curl -fsSL https://github.com/Songmu/ghch/releases/download/${GHCH_VERSION}/ghch_${GHCH_VERSION}_linux_amd64.tar.gz | gtar -xz --strip-components 1 -C ./ghch
+        curl -fsSL https://github.com/Songmu/ghch/releases/download/${GHCH_VERSION}/ghch_${GHCH_VERSION}_linux_amd64.tar.gz | tar -xz --strip-components 1 -C ./ghch
       env:
         GHCH_VERSION: v0.10.2
     - name: Generate New Changelog

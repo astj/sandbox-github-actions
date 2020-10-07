@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.4](https://github.com/astj/sandbox-github-actions/compare/v0.0.3...v0.0.4) (2020-10-07)
+
+
 ## [v0.0.3](https://github.com/astj/sandbox-github-actions/compare/v0.0.1...v0.0.3) (2020-10-07)
 
 * Release v0.0.3-rc2 [#9](https://github.com/astj/sandbox-github-actions/pull/9) ([github-actions[bot]](https://github.com/apps/github-actions))

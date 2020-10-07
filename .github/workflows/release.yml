@@ -14,7 +14,7 @@ jobs:
         run: |
           echo "::set-output name=version::echo ${BRANCH#release-}"
         env:
-          BRANCH: github.event.pull_request.head.ref
+          BRANCH: ${{ github.event.pull_request.head.ref }}
       - name: Checkout
         uses: actions/checkout@v2
         with:

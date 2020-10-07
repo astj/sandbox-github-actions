@@ -12,7 +12,7 @@ jobs:
       - name: Extract version tag from branch name
         id: extract-version
         run: |
-          echo "::set-output name=version::echo ${BRANCH#release-}"
+          echo "::set-output name=version::${BRANCH#release-}"
         env:
           BRANCH: ${{ github.event.pull_request.head.ref }}
       - name: Checkout
